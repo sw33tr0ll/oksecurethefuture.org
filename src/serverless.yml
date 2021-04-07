@@ -14,3 +14,28 @@ functions:
           path: donate
           method: get
           cors: true
+
+plugins:
+  - serverless-domain-manager
+  - serverless-python-requirements
+
+custom:
+  customDomain:
+    domainName: "oksecurethefuture.org"
+    stage: ${opt:stage,'dev'}
+    basePath: ${opt:stage,'dev'}
+    region: us-east-1
+    certificateName: "*.oksecurethefuture.org"
+    endpointType: "regional"
+    securityPolicy: tls_1_2
+    createRoute53Record: true
+    apiType: rest
+    autoDomain: true
+  pythonRequirements:
+    usePoetry: true
+    useDownloadCache: true
+    useStaticCache: false
+    invalidateCaches: true
+    slim: true
+    layer: true
+

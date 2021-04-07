@@ -1,8 +1,20 @@
 import json
+from recaptcha import RecaptchaClient
 
 def donate(event, _):
+    html_page = """
+    <html>
+        <head>
+            <title>OK Secure the Future</title>
+        </head>
+        <body>
+            <
+        </body>
+    </html>
+    """
     http_response = {
         "statusCode": 200,
-        "body": json.dumps({"result":"success!"})
+        "headers": {'Content-Type': 'text/html'},
+        "body": html_page
     }
     return http_response

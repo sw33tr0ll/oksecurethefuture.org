@@ -1,0 +1,16 @@
+service: oksecurethefuture
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+
+functions:
+  donate:
+    handler: app.donate
+    events:
+      - http:
+          path: donate
+          method: get
+          cors: true

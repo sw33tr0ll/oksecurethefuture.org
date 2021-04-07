@@ -21,14 +21,15 @@ plugins:
 
 custom:
   customDomain:
-    domainName: "api.oksecurethefuture.org"
+    domainName: "oksecurethefuture.org"
     stage: ${opt:stage,'dev'}
     basePath: ${opt:stage,'dev'}
     region: us-east-1
-    certificateName: "*.oksecurethefuture.org"
+    certificateName: "oksecurethefuture.org"
     endpointType: "regional"
     securityPolicy: tls_1_2
     createRoute53Record: true
+    hostedZoneId: Z02577032TDKHRJ976Y82
     apiType: rest
     autoDomain: true
   pythonRequirements:

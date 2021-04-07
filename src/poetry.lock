@@ -1,0 +1,17 @@
+[[package]]
+name = "recaptcha"
+version = "1.0rc1"
+description = "Pythonic, well documented and fully featured reCAPTCHA client"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "cb3fac9b8b91bf25c65043f45fe1f1aef517953be06317dcbf275bdf3da4fea0"
+
+[metadata.files]
+recaptcha = [
+    {file = "recaptcha-1.0rc1.tar.gz", hash = "sha256:68d75ecca3f33499da5f9169d51c7b0439f1fdf87720d6d7a5bf8077cf636a98"},
+]

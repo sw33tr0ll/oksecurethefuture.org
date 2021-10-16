@@ -36,14 +36,11 @@ jobs:
         working-directory: "./src"
         run: |
           pip install poetry
-          npm install
-          npm install "./src"
           npm install fs-extra
           npm install aws-sdk
           npm install -g serverless
           serverless plugin install --name serverless-python-requirements
           serverless plugin install --name serverless-domain-manager
-          rm -rf node_modules
           sls deploy -v -s prod
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

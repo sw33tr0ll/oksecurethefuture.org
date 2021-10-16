@@ -6,7 +6,6 @@ authors = ["sweetroll <sweetrollbandit@protonmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-recaptcha = "\b"
 
 [tool.poetry.dev-dependencies]
 

@@ -1,5 +1,4 @@
 import json
-from recaptcha import RecaptchaClient
 
 def donate(event, _):
     html_page = """
